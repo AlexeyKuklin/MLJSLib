@@ -4,8 +4,9 @@ var dist = require('./lib/distribution');
 
 var z = new dist.Ziggurat();
 
-var i = 100;
+var i = 100000000;
 while(--i) {
-    console.log(z.nextGaussian());
+    z.nextGaussian();
+    //console.log(z.nextGaussian());
 }
 
